@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_map_view"
+        android:icon="@drawable/ic_bottomnav_map"
+        android:title="@string/bottom_navigation_menu_map_view"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/nav_list_view"
+        android:icon="@drawable/ic_bottomnav_list"
+        android:title="@string/bottom_navigation_menu_list_view"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/nav_workmates"
+        android:icon="@drawable/ic_bottomnav_group"
+        android:title="@string/bottom_navigation_menu_workmates"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_bottomnav_chat"
+        android:title="@string/bottom_navigation_menu_workmates"
+        app:showAsAction="always|withText"/>
+    
+</menu>

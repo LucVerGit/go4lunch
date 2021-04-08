@@ -1,16 +1,103 @@
-<resources>
-    <string name="app_name">MyfirebaseApp</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Go4Lunch</string>
+    <string name="tagline">Find a nice restaurant and invite your co-workers for lunch!</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_registration">RegistrationActivity</string>
-    <string name="facebook_app_id">1391596474537508</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- SIGN IN ACTIVITY -->
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="error_authentication_canceled">Error: authentication canceled</string>
+    <string name="error_unknown">Error: unknown error</string>
+    <string name="email_existing_title">This email is already linked to an existing account.</string>
+    <string name="email_existing_message">&#160; is already linked to an existing Google account.\n
+        Would you like to log in your Google account to link %1$s sign in method to your Go4Lunch account ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <!-- MAIN ACTIVITY -->
+    <string name="no_restaurant_choose">No restaurant has been chosen!</string>
+    <string name="error_location">Error: unable to get the device location</string>
+
+    <!-- Toolbar -->
+    <string name="hungry">I\'m Hungry!</string>
+    <string name="available">Available workmates</string>
+    <string name="chat">Group chat:</string>
+    <string name="search">Search restaurant …</string>
+    <string name="like">Like</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_menu_open" translatable="false">open</string>
+    <string name="navigation_drawer_menu_close" translatable="false">close</string>
+    <string name="navigation_drawer_menu_your_lunch">YOUR LUNCH</string>
+    <string name="navigation_drawer_menu_settings">SETTINGS</string>
+    <string name="navigation_drawer_menu_logout">LOGOUT</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_navigation_menu_map_view">Map View</string>
+    <string name="bottom_navigation_menu_list_view">List View</string>
+    <string name="bottom_navigation_menu_workmates">Workmates</string>
+    <string name="bottom_navigation_menu_chat">Chat</string>
+    <string name="bottom_navigation_menu_like">Like</string>
+
+
+    <!-- RESTAURANT ACTIVITY -->
+    <string name="is_joining">is joining!</string>
+    <string name="no_phone_available">The phone number isn\'t available</string>
+    <string name="no_website">The website isn\'t available</string>
+
+    <string name="call_button">CALL</string>
+    <string name="like_button">LIKE</string>
+    <string name="website_button">WEBSITE</string>
+
+    <string name="restaurant_i_like">Added to restaurants "I like"</string>
+
+
+    <!-- WORKMATES FRAGMENT -->
+    <string name="is_eating">is eating</string>
+    <string name="no_decided">no decided</string>
+
+
+    <!-- LIST VIEW FRAGMENT -->
+    <string name="open_until">Open until</string>
+    <string name="closing_soon">Closing soon</string>
+    <string name="close">Close</string>
+    <string name="opening_hours_not_available">Opening hours not available</string>
+
+
+    <!-- CHAT FRAGMENT -->
+    <string name="chat_empty">The chat is empty.</string>
+    <string name="compose_your_message">Compose your message …</string>
+    <string name="send">Send</string>
+    <string name="popup_title_perm_access">This application need permissions to work correctly.</string>
+    <string name="toast_title_no_image_chosen">No selected image!</string>
+
+
+    <!-- PERMISSION DIALOG -->
+    <string name="alert_dialog_title">title</string>
+    <string name="alert_dialog_message">message</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- SETTINGS ACTIVITY -->
+    <string name="settings">Settings</string>
+    <string name="notification">Notification :</string>
+
+    <!-- Notification -->
+    <string name="no_time_set">No time set</string>
+    <string name="choose_a_time">Time for notification</string>
+    <string name="allowNotification">Notification at 12:00</string>
+    <string name="cancelNotification">Cancel notification</string>
+    <string name="notification_title">Your Lunch!</string>
+    <string name="lunch_at">You have lunch at</string>
+    <string name="address">Address</string>
+    <string name="with">with</string>
+    <string name="alone">alone</string>
+
+
+    <!-- FACEBOOK PURPOSE -->
+    <string name="facebook_application_id" translatable="false">1391596474537508</string>
+    <string name="facebook_login_protocol_scheme" translatable="false" tools:ignore="UnusedResources">5e71a053dbde11bc9ac1817fef60c67f</string>
+    <string name="facebook_app_id" />
+
 </resources>

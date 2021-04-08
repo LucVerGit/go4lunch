@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/workmatesPhotoImageView"
+            android:background="@drawable/hugh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/workmatesNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Hugh is joining!"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/workmatesPhotoImageView"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
