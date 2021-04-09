@@ -166,6 +166,10 @@ public class NearbySearch {
         private String vicinity;
 
 
+        private Double rating;
+        @SerializedName("user_ratings_total")
+
+
         // --- GETTERS ---
         public Geometry getGeometry() {
             return geometry;
@@ -230,6 +234,13 @@ public class NearbySearch {
             this.vicinity = vicinity;
         }
 
+        public Double getRating() {
+            return rating;
+        }
+
+        public void setRating(Double rating) {
+            this.rating = rating;
+        }
     }
 
 }

@@ -19,7 +19,7 @@ public class PlacesRepository {
 
     // --- Place Details ---
     public static Observable<Place> getRestaurantDetailStream(String placeId) {
-        IPlacesApi service = RetrofitService.retrofit.create(IPlacesApi.class);
+        GoogleMapsApi service = RetrofitService.retrofit.create(GoogleMapsApi.class);
         return service.getRestaurantDetails(placeId)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -28,7 +28,7 @@ public class PlacesRepository {
 
     // --- Nearby Search ---
     public static Observable<NearbySearch> getNearbyRestaurantStream(String location, int radius, String type) {
-        IPlacesApi service = RetrofitService.retrofit.create(IPlacesApi.class);
+        GoogleMapsApi service = RetrofitService.retrofit.create(GoogleMapsApi.class);
 
         return service.getNearbyRestaurants(location, radius, type)
                 .subscribeOn(Schedulers.io())
@@ -58,7 +58,7 @@ public class PlacesRepository {
 
     // --- Autocomplete ---
     public static Observable<Autocomplete> getAutocompleteStream(String input, int radius, String location, String type) {
-        IPlacesApi service = RetrofitService.retrofit.create(IPlacesApi.class);
+        GoogleMapsApi service = RetrofitService.retrofit.create(GoogleMapsApi.class);
 
         return service.getAutocomplete(input, radius, location, type)
                 .subscribeOn(Schedulers.io())

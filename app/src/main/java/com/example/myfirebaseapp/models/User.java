@@ -16,6 +16,8 @@ public class User implements Serializable {
     private List<String> like;
     private int currentTime;
     private boolean userChat;
+    @Nullable
+    private String selectedRestaurantName;
 
     // --- CONSTRUCTOR ---
 
@@ -32,6 +34,7 @@ public class User implements Serializable {
         this.like = new ArrayList<>();
         this.userChat = false;
         this.currentTime = currentTime;
+        this.selectedRestaurantName = null;
 
     }
 
@@ -64,6 +67,32 @@ public class User implements Serializable {
     public void setUserChat(Boolean chatUser) { userChat = chatUser; }
     private void setCurrentTime(int currentTime){
         this.currentTime = currentTime;
+    }
+
+    @Nullable
+    public String getSelectedRestaurantId() {
+        return restaurantId;
+    }
+
+    public void setSelectedRestaurantId(@Nullable String selectedRestaurantId) {
+        this.restaurantId = selectedRestaurantId;
+    }
+
+    @Nullable
+    public String getSelectedRestaurantName() {
+        return selectedRestaurantName;
+    }
+
+    public void setSelectedRestaurantName(@Nullable String selectedRestaurantName) {
+        this.selectedRestaurantName = selectedRestaurantName;
+    }
+
+    public List<String> getLikedRestaurants() {
+        return like;
+    }
+
+    public void setLikedRestaurants(List<String> like) {
+        this.like = like;
     }
 
     @Override
